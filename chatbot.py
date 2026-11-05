@@ -1,0 +1,33 @@
+import ollama
+
+client=ollama.Client()
+
+messages=[]
+
+print("welcome, type 'exit' to stop the conversation")
+
+while True:
+
+    user_input=input("You:")
+
+    if user_input.lower() == "exit":
+        break
+
+    messages.append({
+        "role":"user",
+        "content":user_input
+    }) 
+
+    response=client.chat(
+        model="llama3.2",
+        messages=messages
+    )
+
+    assistant_reply=response.message.content
+
+    print("Bot:",assistant_reply)
+
+    messages.append({
+        "role":"bot",
+        "content":assistant_reply
+    })
