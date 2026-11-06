@@ -9,5 +9,3 @@ embeds_=ollama.embeddings(
 vector=embeds_.embedding
 
 print(vector)
-
-#print(len(vector))--Answer is 768
