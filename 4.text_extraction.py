@@ -22,6 +22,4 @@ else:
 
     combined_text=" ".join(extracted_text)
 
-    combined_text=combined_text.strip()
-
     print(combined_text)
