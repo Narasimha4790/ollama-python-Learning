@@ -32,11 +32,11 @@ arr3=np.array(r)
 
 query_array=np.array(query_vector)
 
-matrix1=arr1.reshape(1,768)
-matrix2=arr2.reshape(1,768)
-matrix3=arr3.reshape(1,768)
+matrix1=arr1.reshape(1,-1)
+matrix2=arr2.reshape(1,-1)
+matrix3=arr3.reshape(1,-1)
 
-query_matrix=query_array.reshape(1,768)
+query_matrix=query_array.reshape(1,-1)
 
 cs1=cosine_similarity(matrix1,query_matrix)
 cs2=cosine_similarity(matrix2,query_matrix)
