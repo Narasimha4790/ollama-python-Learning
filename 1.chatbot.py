@@ -1,6 +1,5 @@
 import ollama
 
-client=ollama.Client()
 
 messages=[]
 
@@ -18,7 +17,7 @@ while True:
         "content":user_input
     }) 
 
-    response=client.chat(
+    response=ollama.chat(
         model="llama3.2",
         messages=messages
     )
