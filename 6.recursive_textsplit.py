@@ -5,7 +5,7 @@ Ollama runs local models.
 RAG retrieves relevant information."""
 
 splitter=RecursiveCharacterTextSplitter(
-    chunk_size=50,
+    chunk_size=25,
     chunk_overlap=10,
 )
 
