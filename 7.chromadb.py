@@ -55,6 +55,6 @@ results=collection.query(
     include=['documents','metadatas','distances']
 )
 
-print(results['documents'],'\n')
-print(results['metadatas'],'\n')
+print(results['documents'])
+print(results['metadatas'])
 print(results['distances'])
