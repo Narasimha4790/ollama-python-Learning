@@ -12,25 +12,23 @@ texts = [
 query = "What is RAG?"
 
 embeds=[]
-query_emb=[]
+query_embed=[]
 
 query_embeds=ollama.embeddings(
     model='nomic-embed-text',
     prompt=query
 )
 
-query_emb.append(query_embeds.embedding)
-
-
+query_embed.append(query_embeds.embedding)
 
 metadata=[{
-    'source':'texts1',
+    'source':'sentence1',
     'page':1
     },
-    {'source':'texts2',
-    'page':2},
-    {'source':'texts3',
-        'page':3}]
+    {'source':'sentence2',
+    'page':1},
+    {'source':'sentence3',
+        'page':1}]
 
 for i in range(len(texts)):
     response=ollama.embeddings(
@@ -50,7 +48,7 @@ collection.add(
 )
 
 results=collection.query(
-    query_embeddings=query_emb,
+    query_embeddings=query_embed,
     n_results=1,
     include=['documents','metadatas','distances']
 )
