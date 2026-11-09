@@ -24,9 +24,9 @@ while True:
 
     assistant_reply=response.message.content
 
-    print("Bot:",assistant_reply)
+    print("assistant:",assistant_reply)
 
     messages.append({
-        "role":"bot",
+        "role":"assistant",
         "content":assistant_reply
     })
