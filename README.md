@@ -29,3 +29,26 @@ Explored text embeddings using Ollama's
 **Key learning:** Understanding how text is
 represented as numerical vectors for further
 processing in RAG applications.
+
+
+### 3. Embedding Similarity (`3.embedding_similarity.py`)
+
+Explored semantic similarity between sentences and
+a query using text embeddings.
+
+**Concepts learned:**
+- Generating embeddings for multiple sentences.
+- Generating query embeddings.
+- Working with NumPy arrays.
+- Reshaping arrays into 2D format.
+- Understanding cosine similarity.
+- Comparing sentence embeddings with query embeddings.
+
+**Libraries used:**
+- Ollama
+- NumPy
+- Scikit-learn
+
+**Key learning:** Understanding how cosine similarity
+helps identify how closely a sentence is related
+to a given query.
