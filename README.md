@@ -52,3 +52,25 @@ a query using text embeddings.
 **Key learning:** Understanding how cosine similarity
 helps identify how closely a sentence is related
 to a given query.
+
+
+### 4. PDF Text Extraction (`4.text_extraction.py`)
+
+Implemented PDF text extraction using PyMuPDF.
+
+**Concepts learned:**
+- Opening PDF documents using PyMuPDF.
+- Checking the number of pages.
+- Loading individual pages.
+- Extracting text using `get_text()`.
+- Storing extracted text in a list.
+- Combining extracted text into a single string.
+- Handling `FileNotFoundError`.
+- Closing PDF documents.
+
+**Library used:**
+- PyMuPDF
+
+**Key learning:** Understanding how to extract
+text from PDF documents using Python for further
+processing in RAG applications.
