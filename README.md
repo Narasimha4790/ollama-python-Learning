@@ -94,3 +94,21 @@ documents into smaller, manageable chunks while
 preserving context for better information retrieval.
 
 
+### 6. Recursive Text Splitting (`6.recursive_textsplit.py`)
+
+Explored recursive character-based text splitting
+using LangChain.
+
+**Concepts learned:**
+- Understanding recursive text splitting.
+- Using RecursiveCharacterTextSplitter.
+- Configuring chunk size and chunk overlap.
+- Understanding separators during text splitting.
+- Preserving context between consecutive chunks.
+
+**Library used:**
+- langchain-text-splitters
+
+**Key learning:** Understanding how recursive
+splitting divides text into manageable chunks while
+considering separators and preserving context.
