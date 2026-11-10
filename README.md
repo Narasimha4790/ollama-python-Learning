@@ -112,3 +112,27 @@ using LangChain.
 **Key learning:** Understanding how recursive
 splitting divides text into manageable chunks while
 considering separators and preserving context.
+
+
+### 7. Vector Database with ChromaDB (`7.chromadb.py`)
+
+Implemented a basic vector database workflow using
+ChromaDB and Ollama.
+
+**Concepts learned:**
+- Understanding vector databases.
+- Creating a persistent ChromaDB client.
+- Creating and retrieving collections.
+- Generating document and query embeddings.
+- Storing documents and embeddings in ChromaDB.
+- Adding metadata to documents.
+- Retrieving relevant documents using query embeddings.
+- Understanding similarity distances.
+
+**Libraries used:**
+- Ollama
+- ChromaDB
+
+**Key learning:** Understanding how ChromaDB stores
+and retrieves relevant information using vector
+embeddings as part of a RAG application.
