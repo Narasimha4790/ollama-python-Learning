@@ -1,7 +1,7 @@
 import ollama
 import chromadb
 
-client=chromadb.Client()
+client=chromadb.PersistentClient(path="./chroma_db")
 
 texts = [
     "Python is a programming language.",
@@ -38,7 +38,7 @@ for i in range(len(texts)):
 
     embeds.append(response.embedding)
 
-collection=client.create_collection(name='python_docs')
+collection=client.get_or_create_collection(name='python_docs')
 
 collection.add(
     ids=['chunk1','chunk2','chunk3'],
