@@ -74,3 +74,23 @@ Implemented PDF text extraction using PyMuPDF.
 **Key learning:** Understanding how to extract
 text from PDF documents using Python for further
 processing in RAG applications.
+
+
+### 5. Text Chunking (`5.chunking_practice.py`)
+
+Explored different text chunking techniques as part
+of the RAG learning process.
+
+**Concepts learned:**
+- Understanding text chunking.
+- Word-based text splitting.
+- Character-based text splitting.
+- Configuring chunk size and overlap.
+- Preserving context between consecutive chunks.
+- Understanding separators in text splitting.
+
+**Key learning:** Understanding how to divide large
+documents into smaller, manageable chunks while
+preserving context for better information retrieval.
+
+
