@@ -50,7 +50,8 @@ collection.add(
 results=collection.query(
     query_embeddings=query_embed,
     n_results=1,
-    include=['documents','metadatas','distances']
+    include=['documents','metadatas','distances'],
+    where={'source':'sentence3'}
 )
 
 print(results['documents'])
