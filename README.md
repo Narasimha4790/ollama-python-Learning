@@ -136,3 +136,42 @@ ChromaDB and Ollama.
 **Key learning:** Understanding how ChromaDB stores
 and retrieves relevant information using vector
 embeddings as part of a RAG application.
+
+# basic learning implementation of RAG
+
+## Overview
+A basic Retrieval-Augmented Generation (RAG) project built using Python, Ollama, and ChromaDB. It extracts text from a PDF, splits it into chunks, generates embeddings, retrieves relevant information, and generates answers using an LLM.
+
+## Technologies Used
+- Python
+- Ollama (Llama 3.2)
+- Nomic Embed Text
+- PyMuPDF
+- LangChain Text Splitters
+- ChromaDB
+
+## RAG Workflow
+1. Extract text from a PDF using PyMuPDF.
+2. Split text into smaller chunks.
+3. Generate embeddings using Nomic Embed Text.
+4. Store chunks and embeddings in ChromaDB.
+5. Convert the user query into an embedding.
+6. Retrieve relevant chunks using similarity search.
+7. Generate answers using Llama 3.2 and the retrieved context.
+
+## Learning Outcomes
+- PDF text extraction
+- Character-based text chunking
+- Embedding generation
+- Vector database integration
+- Similarity-based retrieval
+- Context-based answer generation
+
+## How to Run
+1. Install the required Python libraries.
+2. Install Ollama and pull the required models.
+3. Update the PDF file path in the Python script.
+4. Run the Python script.
+
+## Note
+This project was developed for learning and practicing the fundamentals of Retrieval-Augmented Generation (RAG).
