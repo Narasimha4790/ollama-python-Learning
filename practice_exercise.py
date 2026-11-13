@@ -36,9 +36,9 @@ for chunk in chunks:
     embeds.append(response.embedding)
 
 
-client=chromadb.Client()
+client = chromadb.PersistentClient(path="./chroma_db")
 
-collection=client.create_collection(name='practice')
+collection = client.get_or_create_collection(name='practice')
 
 id=[]
 final_md=[]
@@ -70,7 +70,7 @@ results=collection.query(
     include=['documents','metadatas']
 )
 
-context=results['documents'][0][0]
+context=" ".join(results['documents'][0])
 prompt=f"""Answer strictly using the provided context. 
 If the answer is not available in the context, say Information not found in the document. 
 
